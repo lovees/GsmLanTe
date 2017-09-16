@@ -14,9 +14,10 @@ namespace DAL
         //具体配置在App.config里
         public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["MySqlConStr"].ConnectionString;
     }
-    public class SQLiteConSetting
-    {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["SqliteConStr"].ConnectionString;
+    //public class SQLiteConSetting
+   // {
+     //   public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["SqliteConStr"].ConnectionString;
+        //SQLiteConnection conn = new SQLiteConnection(connectionString);
         //conn.SetPassword("123456");//数据库密码   
-    }
+   // }
 }

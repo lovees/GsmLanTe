@@ -13,10 +13,10 @@ using DevComponents.DotNetBar;
 
 namespace GsmLanTe
 {
-    public partial class frmLogin : Form
+    public partial class Login : Form
     {
 
-        public frmLogin()
+        public Login()
         {
             InitializeComponent();
         }
@@ -34,6 +34,11 @@ namespace GsmLanTe
                MessageBoxEx.Show("请输入登录口令!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            
+            GoodsWeb frm = new GoodsWeb();
+
+            frm.Show();
+            this.Visible = false;
         }
     }
 }
