@@ -43,8 +43,13 @@ namespace GsmLanTe
             WebGoods.Columns[5].Width = 55;
             WebGoods.Columns[6].Width = 60;
             WebGoods.Columns[7].Width = 65;
+            WebGoods.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            WebGoods.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            WebGoods.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            WebGoods.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            WebGoods.Columns[7].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             //int index = dataGridView1.CurrentRow.Index;
-            //this.dataGridView1.Rows[index].Cells[7].Value = "http://www.gsmsofia.com/" + dataGridView1.Rows[index].Cells[7].Value.ToString();
+            //this.dataGridView1.Rows[index].Cells[7].Value = "http://www.fssay.com/" + dataGridView1.Rows[index].Cells[7].Value.ToString();
         }
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -112,7 +117,7 @@ namespace GsmLanTe
             texttien.Text = WebGoods.Rows[i].Cells[4].Value.ToString();  //选中行的第5列放入文本框中
             textpreci.Text = WebGoods.Rows[i].Cells[5].Value.ToString();  //选中行的第6列放入文本框中
             textvip.Text = WebGoods.Rows[i].Cells[6].Value.ToString();  //选中行的第7列放入文本框中
-            pictureBox1.ImageLocation = "http://www.gsmsofia.com/" + WebGoods.Rows[i].Cells[8].Value.ToString();  //选中行的第8列放入图片框中
+            pictureBox1.ImageLocation = "http://www.fssay.com/" + WebGoods.Rows[i].Cells[8].Value.ToString();  //选中行的第8列放入图片框中
         }
 
         
