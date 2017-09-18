@@ -30,18 +30,22 @@ namespace GsmLanTe
             WebGoods.Columns[4].HeaderCell.Value = "店存";
             WebGoods.Columns[5].HeaderCell.Value = "单价";
             WebGoods.Columns[6].HeaderCell.Value = "VIP价";
-            WebGoods.Columns[7].HeaderCell.Value = "图片";
+            WebGoods.Columns[7].HeaderCell.Value = "批发价";
+            WebGoods.Columns[8].HeaderCell.Value = "图片";
             WebGoods.Columns[0].ReadOnly = true;
             WebGoods.Columns[1].ReadOnly = true;
             WebGoods.Columns[2].ReadOnly = true;
+            WebGoods.Columns[0].Width = 39;
+            WebGoods.Columns[1].Width = 85;
             WebGoods.Columns[2].Width = 225;
-            WebGoods.Columns[3].Width = 60;
-            WebGoods.Columns[4].Width = 60;
-            WebGoods.Columns[5].Width = 60;
+            WebGoods.Columns[3].Width = 55;
+            WebGoods.Columns[4].Width = 55;
+            WebGoods.Columns[5].Width = 55;
             WebGoods.Columns[6].Width = 60;
+            WebGoods.Columns[7].Width = 65;
             //int index = dataGridView1.CurrentRow.Index;
             //this.dataGridView1.Rows[index].Cells[7].Value = "http://www.gsmsofia.com/" + dataGridView1.Rows[index].Cells[7].Value.ToString();
-            }
+        }
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -108,7 +112,7 @@ namespace GsmLanTe
             texttien.Text = WebGoods.Rows[i].Cells[4].Value.ToString();  //选中行的第5列放入文本框中
             textpreci.Text = WebGoods.Rows[i].Cells[5].Value.ToString();  //选中行的第6列放入文本框中
             textvip.Text = WebGoods.Rows[i].Cells[6].Value.ToString();  //选中行的第7列放入文本框中
-            pictureBox1.ImageLocation = "http://www.gsmsofia.com/" + WebGoods.Rows[i].Cells[7].Value.ToString();  //选中行的第8列放入图片框中
+            pictureBox1.ImageLocation = "http://www.gsmsofia.com/" + WebGoods.Rows[i].Cells[8].Value.ToString();  //选中行的第8列放入图片框中
         }
 
         

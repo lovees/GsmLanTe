@@ -62,7 +62,7 @@
             this.WebGoods.Margin = new System.Windows.Forms.Padding(2);
             this.WebGoods.Name = "WebGoods";
             this.WebGoods.RowTemplate.Height = 27;
-            this.WebGoods.Size = new System.Drawing.Size(721, 680);
+            this.WebGoods.Size = new System.Drawing.Size(729, 680);
             this.WebGoods.TabIndex = 0;
             this.WebGoods.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WebGoods_CellContentClick);
             // 

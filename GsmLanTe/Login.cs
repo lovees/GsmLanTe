@@ -40,5 +40,10 @@ namespace GsmLanTe
             frm.Show();
             this.Visible = false;
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
