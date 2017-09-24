@@ -57,9 +57,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThoughtWorks.QRCode">
-      <HintPath>..\..\Library\ThoughtWorks.QRCode.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GoodsWeb.cs">
